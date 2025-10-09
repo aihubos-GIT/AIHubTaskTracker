@@ -24,16 +24,12 @@ builder.WebHost.UseUrls($"http://*:{port}");
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseCors("AllowAll");
 app.UseAuthorization();
-app.MapGet("/", () => "✅ AIHubTaskTracker API is running successfully on Render!");
+app.MapGet("/", () => " API AIHubTaskTracker đang chạy thành công trên Render!");
 app.MapControllers();
 
 app.Run();
