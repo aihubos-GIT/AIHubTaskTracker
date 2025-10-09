@@ -33,6 +33,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("AllowAll");
 app.UseAuthorization();
+app.MapGet("/", () => "✅ AIHubTaskTracker API is running successfully on Render!");
 app.MapControllers();
 
 app.Run();

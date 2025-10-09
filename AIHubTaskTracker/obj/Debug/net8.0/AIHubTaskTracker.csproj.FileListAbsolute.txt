@@ -171,3 +171,9 @@ D:\AIHubTaskTracker\AIHubTaskTracker\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnal
 D:\AIHubTaskTracker\AIHubTaskTracker\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\AIHubTaskTracker.sourcelink.json
 D:\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\AIHubTaskTracker\AIHubTaskTracker\bin\Debug\net8.0\publish\web.config
+D:\AIHubTaskTracker\AIHubTaskTracker\bin\Debug\net8.0\publish\AIHubTaskTracker.deps.json
+D:\AIHubTaskTracker\AIHubTaskTracker\bin\Debug\net8.0\publish\AIHubTaskTracker.runtimeconfig.json
+D:\AIHubTaskTracker\AIHubTaskTracker\bin\Debug\net8.0\publish\AIHubTaskTracker.staticwebassets.endpoints.json
+D:\AIHubTaskTracker\AIHubTaskTracker\bin\Debug\net8.0\publish\appsettings.Development.json
+D:\AIHubTaskTracker\AIHubTaskTracker\bin\Debug\net8.0\publish\appsettings.json
