@@ -1,0 +1,6 @@
+@AIHubTaskTracker_HostAddress = http://localhost:5127
+
+GET {{AIHubTaskTracker_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

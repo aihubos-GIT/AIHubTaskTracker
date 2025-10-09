@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "9cHWJq7iiwdyrEscKYl7WJpw1isSu6NeUGZ0krfVfk4=",
+  "Source": "AIHubTaskTracker",
+  "BasePath": "_content/AIHubTaskTracker",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
