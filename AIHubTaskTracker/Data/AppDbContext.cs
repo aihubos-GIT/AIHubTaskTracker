@@ -16,12 +16,9 @@ namespace AIHubTaskTracker.Data
         {
             base.OnModelCreating(modelBuilder);
 
-
-            modelBuilder.Entity<TaskItem>().Property(t => t.CreatedAt).HasDefaultValueSql("getutcdate()");
-
-            modelBuilder.Entity<TaskItem>().HasData(
-            new TaskItem { Id = 1, MemberName = "Nguyễn Thành Tuấn", TaskTitle = "Tích hợp API Dashboard", Status = "In Progress", Deadline = DateTime.Parse("2025-10-15"), CreatedAt = DateTime.Parse("2025-10-10") }
-            );
+            modelBuilder.Entity<TaskItem>()
+                .Property(t => t.CreatedAt)
+                .HasDefaultValueSql("getutcdate()");
         }
     }
 }

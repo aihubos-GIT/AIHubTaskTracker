@@ -50,12 +50,11 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "dbo.Tasks [Data]",
+              "Title": "dbo.Tasks.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AIHubTaskTrackerDb/True/SqlTable/dbo.Tasks.sql",
-              "ToolTip": "dbo.Tasks [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AIHubTaskTrackerDb/True/SqlTable/dbo.Tasks.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-10-09T12:16:59.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T12:16:59.631Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "AIHubTaskTracker\\README.md",
               "ViewState": "AgIAAG0AAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-10-09T12:16:22.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T12:16:22.201Z"
             },
             {
               "$type": "Document",
@@ -80,8 +78,7 @@
               "RelativeToolTip": "AIHubTaskTracker\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-09T11:33:17.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T11:33:17.735Z"
             },
             {
               "$type": "Document",
@@ -93,8 +90,7 @@
               "RelativeToolTip": "AIHubTaskTracker\\Program.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T11:25:14.621Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T11:25:14.621Z"
             },
             {
               "$type": "Document",
@@ -104,7 +100,7 @@
               "RelativeDocumentMoniker": "AIHubTaskTracker\\Data\\AppDbContext.cs",
               "ToolTip": "D:\\AIHubTaskTracker\\AIHubTaskTracker\\Data\\AppDbContext.cs",
               "RelativeToolTip": "AIHubTaskTracker\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T11:21:15.661Z",
               "EditorCaption": ""
@@ -117,7 +113,7 @@
               "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\TaskItem.cs",
               "ToolTip": "D:\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\TaskItem.cs",
               "RelativeToolTip": "AIHubTaskTracker\\Models\\TaskItem.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA1wBMAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwCEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T11:21:02.566Z",
               "EditorCaption": ""
@@ -125,15 +121,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AIHubTaskTracker",
+              "Title": "AIHubTaskTracker.csproj",
               "DocumentMoniker": "D:\\AIHubTaskTracker\\AIHubTaskTracker\\AIHubTaskTracker.csproj",
               "RelativeDocumentMoniker": "AIHubTaskTracker\\AIHubTaskTracker.csproj",
               "ToolTip": "D:\\AIHubTaskTracker\\AIHubTaskTracker\\AIHubTaskTracker.csproj",
               "RelativeToolTip": "AIHubTaskTracker\\AIHubTaskTracker.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-09T11:19:09.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T11:19:09.345Z"
             },
             {
               "$type": "Document",
@@ -143,7 +138,7 @@
               "RelativeDocumentMoniker": "AIHubTaskTracker\\Controllers\\TasksController.cs",
               "ToolTip": "D:\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\TasksController.cs",
               "RelativeToolTip": "AIHubTaskTracker\\Controllers\\TasksController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T11:18:59.195Z",
               "EditorCaption": ""
@@ -158,8 +153,7 @@
               "RelativeToolTip": "AIHubTaskTracker\\AIHubTaskTracker.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-10-09T11:18:46.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T11:18:46.696Z"
             }
           ]
         }
