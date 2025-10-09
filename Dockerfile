@@ -1,20 +1,24 @@
-﻿# Stage 1: Build
+﻿# =============================
+# STAGE 1: BUILD
+# =============================
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-COPY *.csproj .
-RUN dotnet restore
+COPY AIHubTaskTracker/AIHubTaskTracker.csproj AIHubTaskTracker/
+
+# Restore dependencies
+RUN dotnet restore "AIHubTaskTracker/AIHubTaskTracker.csproj"
 
 COPY . .
+
+# Build và publish ra thư mục /app/publish
+WORKDIR /src/AIHubTaskTracker
 RUN dotnet publish -c Release -o /app/publish
 
-# Stage 2: Runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
-WORKDIR /app
+# =============================
+# STAGE 2: RUNTIME
+# =============================
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 COPY --from=build /app/publish .
-
-ENV ASPNETCORE_URLS=http://+:${PORT}
-EXPOSE ${PORT}
-
 ENTRYPOINT ["dotnet", "AIHubTaskTracker.dll"]
