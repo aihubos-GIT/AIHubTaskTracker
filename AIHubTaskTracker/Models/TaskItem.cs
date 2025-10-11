@@ -24,11 +24,9 @@ namespace AIHubTaskTracker.Models
         [Required]
         [MaxLength(50)]
         public string Status { get; set; } = "Pending";
-
-
-        public DateTime? Deadline { get; set; }
-
-
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime Deadline { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public int MemberId { get; set; }
+        public Member? Member { get; set; }
     }
 }

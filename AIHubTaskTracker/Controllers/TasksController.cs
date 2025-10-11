@@ -1,90 +1,99 @@
 ﻿using AIHubTaskTracker.Data;
+using AIHubTaskTracker.DTOs;
 using AIHubTaskTracker.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace AIHubTaskTracker.Controllers
+[ApiController]
+[Route("tasks")]
+public class TasksController : ControllerBase
 {
-    [ApiController]
-    [Route("tasks")]
-    public class TasksController : ControllerBase
+    private readonly AppDbContext _db;
+    private readonly ILogger<TasksController> _logger;
+
+    public TasksController(AppDbContext db, ILogger<TasksController> logger)
     {
-        private readonly AppDbContext _db;
-        private readonly ILogger<TasksController> _logger;
+        _db = db;
+        _logger = logger;
+    }
 
-        public TasksController(AppDbContext db, ILogger<TasksController> logger)
+    // GET /tasks
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<TaskItem>>> GetAll()
+    {
+        var tasks = await _db.Tasks.Include(t => t.Member)
+                                   .OrderByDescending(t => t.CreatedAt)
+                                   .ToListAsync();
+        return Ok(tasks);
+    }
+
+    // GET /tasks/{id}
+    [HttpGet("{id:int}")]
+    public async Task<ActionResult<TaskItem>> Get(int id)
+    {
+        var task = await _db.Tasks.Include(t => t.Member)
+                                  .FirstOrDefaultAsync(t => t.Id == id);
+        if (task == null) return NotFound();
+        return Ok(task);
+    }
+
+    // POST /tasks
+    [HttpPost]
+    public async Task<ActionResult<TaskItem>> Create([FromBody] TaskCreateDto dto)
+    {
+        var task = new TaskItem
         {
-            _db = db;
-            _logger = logger;
-        }
+            TaskTitle = dto.TaskTitle,
+            Status = dto.Status,
+            Deadline = dto.Deadline,
+            MemberId = dto.MemberId,
+            CreatedAt = DateTime.UtcNow
+        };
 
-        //  GET /tasks
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<TaskItem>>> GetAll()
+        _db.Tasks.Add(task);
+        await _db.SaveChangesAsync();
+        return CreatedAtAction(nameof(Get), new { id = task.Id }, task);
+    }
+
+    [HttpPut("{id:int}")]
+    public async Task<IActionResult> Update(int id, [FromBody] TaskUpdateDto dto)
+    {
+        var task = await _db.Tasks.FindAsync(id);
+        if (task == null) return NotFound();
+
+        var oldStatus = task.Status;
+
+        task.Status = dto.Status ?? task.Status;
+        task.Deadline = dto.Deadline ?? task.Deadline;
+        task.MemberId = dto.MemberId ?? task.MemberId;
+
+        await _db.SaveChangesAsync();
+
+        // Tạo TaskLog
+        var log = new TaskLog
         {
-            var tasks = await _db.Tasks.OrderByDescending(t => t.CreatedAt).ToListAsync();
-            return Ok(tasks);
-        }
+            TaskId = task.Id,
+            MemberId = task.MemberId,
+            OldStatus = oldStatus,
+            NewStatus = task.Status,
+            ChangedAt = DateTime.UtcNow
+        };
+        _db.TaskLogs.Add(log);
+        await _db.SaveChangesAsync();
 
-        //  GET /tasks/{id}
-        [HttpGet("{id:int}")]
-        public async Task<ActionResult<TaskItem>> Get(int id)
-        {
-            var item = await _db.Tasks.FindAsync(id);
-            if (item == null) return NotFound();
-            return Ok(item);
-        }
+        return NoContent();
+    }
 
-        //  POST /tasks
-        [HttpPost]
-        public async Task<ActionResult<TaskItem>> Create([FromBody] TaskItem dto)
-        {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
 
-            var task = new TaskItem
-            {
-                MemberName = dto.MemberName,
-                TaskTitle = dto.TaskTitle,
-                Status = string.IsNullOrWhiteSpace(dto.Status) ? "Pending" : dto.Status,
-                Deadline = dto.Deadline,
-                CreatedAt = DateTime.UtcNow
-            };
+    // DELETE /tasks/{id}
+    [HttpDelete("{id:int}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var task = await _db.Tasks.FindAsync(id);
+        if (task == null) return NotFound();
 
-            _db.Tasks.Add(task);
-            await _db.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(Get), new { id = task.Id }, task);
-        }
-
-        //  PUT /tasks/{id}
-        [HttpPut("{id:int}")]
-        public async Task<IActionResult> Update(int id, [FromBody] TaskItem dto)
-        {
-            var item = await _db.Tasks.FindAsync(id);
-            if (item == null) return NotFound();
-
-            item.Status = dto.Status ?? item.Status;
-            item.TaskTitle = dto.TaskTitle ?? item.TaskTitle;
-            item.MemberName = dto.MemberName ?? item.MemberName;
-            item.Deadline = dto.Deadline != default ? dto.Deadline : item.Deadline;
-
-            _db.Tasks.Update(item);
-            await _db.SaveChangesAsync();
-
-            return NoContent();
-        }
-
-        // DELETE /tasks/{id}
-        [HttpDelete("{id:int}")]
-        public async Task<IActionResult> Delete(int id)
-        {
-            var item = await _db.Tasks.FindAsync(id);
-            if (item == null) return NotFound();
-
-            _db.Tasks.Remove(item);
-            await _db.SaveChangesAsync();
-
-            return NoContent();
-        }
+        _db.Tasks.Remove(task);
+        await _db.SaveChangesAsync();
+        return NoContent();
     }
 }
