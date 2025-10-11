@@ -178,5 +178,3 @@ D:\AIHubTaskTracker\AIHubTaskTracker\bin\Debug\net8.0\publish\appsettings.Develo
 D:\AIHubTaskTracker\AIHubTaskTracker\bin\Debug\net8.0\publish\appsettings.json
 D:\AIHubTaskTracker\AIHubTaskTracker\bin\Debug\net8.0\Npgsql.dll
 D:\AIHubTaskTracker\AIHubTaskTracker\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-D:\AIHubTaskTracker\AIHubTaskTracker\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
-D:\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
