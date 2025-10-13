@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_4",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_5",
     "RelativePath": "",
     "HttpMethod": "GET",
     "IsController": false,
@@ -18,138 +18,30 @@
     ]
   },
   {
-    "ContainingType": "KPIController",
+    "ContainingType": "AIHubTaskTracker.Controllers.MembersController",
     "Method": "GetAll",
-    "RelativePath": "kpis",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[AIHubTaskTracker.Models.KPI, AIHubTaskTracker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "KPIController",
-    "Method": "Create",
-    "RelativePath": "kpis",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "AIHubTaskTracker.DTOs.KPICreateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "AIHubTaskTracker.Models.KPI",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "KPIController",
-    "Method": "Get",
-    "RelativePath": "kpis/{id}",
+    "RelativePath": "api/Members",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "page",
         "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "AIHubTaskTracker.Models.KPI",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "KPIController",
-    "Method": "Update",
-    "RelativePath": "kpis/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       },
       {
-        "Name": "dto",
-        "Type": "AIHubTaskTracker.DTOs.KPIUpdateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "KPIController",
-    "Method": "Delete",
-    "RelativePath": "kpis/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
+        "Name": "pageSize",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MembersController",
-    "Method": "GetAll",
-    "RelativePath": "members",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[AIHubTaskTracker.Models.Member, AIHubTaskTracker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "MembersController",
+    "ContainingType": "AIHubTaskTracker.Controllers.MembersController",
     "Method": "Create",
-    "RelativePath": "members",
+    "RelativePath": "api/Members",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -160,22 +52,12 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "AIHubTaskTracker.Models.Member",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "MembersController",
-    "Method": "Get",
-    "RelativePath": "members/{id}",
+    "ContainingType": "AIHubTaskTracker.Controllers.MembersController",
+    "Method": "GetById",
+    "RelativePath": "api/Members/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -199,9 +81,9 @@
     ]
   },
   {
-    "ContainingType": "MembersController",
+    "ContainingType": "AIHubTaskTracker.Controllers.MembersController",
     "Method": "Update",
-    "RelativePath": "members/{id}",
+    "RelativePath": "api/Members/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -220,9 +102,108 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "MembersController",
+    "ContainingType": "AIHubTaskTracker.Controllers.MembersController",
     "Method": "Delete",
-    "RelativePath": "members/{id}",
+    "RelativePath": "api/Members/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LogsController",
+    "Method": "GetAll",
+    "RelativePath": "logs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LogsController",
+    "Method": "Create",
+    "RelativePath": "logs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "AIHubTaskTracker.DTOs.LogCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AIHubTaskTracker.Models.Log",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LogsController",
+    "Method": "Get",
+    "RelativePath": "logs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AIHubTaskTracker.Models.Log",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LogsController",
+    "Method": "Update",
+    "RelativePath": "logs/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "AIHubTaskTracker.DTOs.LogUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LogsController",
+    "Method": "Delete",
+    "RelativePath": "logs/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -243,17 +224,7 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Report, AIHubTaskTracker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "ReportsController",
@@ -271,7 +242,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Report",
+        "Type": "AIHubTaskTracker.Models.Report",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -297,7 +268,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Report",
+        "Type": "AIHubTaskTracker.Models.Report",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -345,47 +316,28 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TaskLogsController",
-    "Method": "GetAll",
-    "RelativePath": "tasklogs",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[AIHubTaskTracker.Models.TaskLog, AIHubTaskTracker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "TasksController",
+    "ContainingType": "TaskItemController",
     "Method": "GetAll",
     "RelativePath": "tasks",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[AIHubTaskTracker.Models.TaskItem, AIHubTaskTracker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
-    ]
+    ],
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "TasksController",
+    "ContainingType": "TaskItemController",
     "Method": "Create",
     "RelativePath": "tasks",
     "HttpMethod": "POST",
@@ -411,7 +363,7 @@
     ]
   },
   {
-    "ContainingType": "TasksController",
+    "ContainingType": "TaskItemController",
     "Method": "Get",
     "RelativePath": "tasks/{id}",
     "HttpMethod": "GET",
@@ -437,7 +389,7 @@
     ]
   },
   {
-    "ContainingType": "TasksController",
+    "ContainingType": "TaskItemController",
     "Method": "Update",
     "RelativePath": "tasks/{id}",
     "HttpMethod": "PUT",
@@ -458,7 +410,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TasksController",
+    "ContainingType": "TaskItemController",
     "Method": "Delete",
     "RelativePath": "tasks/{id}",
     "HttpMethod": "DELETE",

@@ -24,62 +24,36 @@
         }
       }
     },
-    "/kpis": {
+    "/logs": {
       "get": {
         "tags": [
-          "KPI"
+          "Logs"
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/KPI"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/KPI"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/KPI"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "post": {
         "tags": [
-          "KPI"
+          "Logs"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KPICreateDto"
+                "$ref": "#/components/schemas/LogCreateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KPICreateDto"
+                "$ref": "#/components/schemas/LogCreateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KPICreateDto"
+                "$ref": "#/components/schemas/LogCreateDto"
               }
             }
           }
@@ -90,17 +64,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/KPI"
+                  "$ref": "#/components/schemas/Log"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/KPI"
+                  "$ref": "#/components/schemas/Log"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/KPI"
+                  "$ref": "#/components/schemas/Log"
                 }
               }
             }
@@ -108,10 +82,10 @@
         }
       }
     },
-    "/kpis/{id}": {
+    "/logs/{id}": {
       "get": {
         "tags": [
-          "KPI"
+          "Logs"
         ],
         "parameters": [
           {
@@ -130,17 +104,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/KPI"
+                  "$ref": "#/components/schemas/Log"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/KPI"
+                  "$ref": "#/components/schemas/Log"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/KPI"
+                  "$ref": "#/components/schemas/Log"
                 }
               }
             }
@@ -149,7 +123,7 @@
       },
       "put": {
         "tags": [
-          "KPI"
+          "Logs"
         ],
         "parameters": [
           {
@@ -166,17 +140,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/KPIUpdateDto"
+                "$ref": "#/components/schemas/LogUpdateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/KPIUpdateDto"
+                "$ref": "#/components/schemas/LogUpdateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/KPIUpdateDto"
+                "$ref": "#/components/schemas/LogUpdateDto"
               }
             }
           }
@@ -189,7 +163,7 @@
       },
       "delete": {
         "tags": [
-          "KPI"
+          "Logs"
         ],
         "parameters": [
           {
@@ -209,40 +183,34 @@
         }
       }
     },
-    "/members": {
+    "/api/Members": {
       "get": {
         "tags": [
           "Members"
         ],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Member"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Member"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Member"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
@@ -271,29 +239,12 @@
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Member"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Member"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Member"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
-    "/members/{id}": {
+    "/api/Members/{id}": {
       "get": {
         "tags": [
           "Members"
@@ -401,33 +352,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Report"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Report"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Report"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
@@ -579,84 +504,40 @@
         }
       }
     },
-    "/tasklogs": {
-      "get": {
-        "tags": [
-          "TaskLogs"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/TaskLog"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/TaskLog"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/TaskLog"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/tasks": {
       "get": {
         "tags": [
-          "Tasks"
+          "TaskItem"
+        ],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/TaskItem"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/TaskItem"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/TaskItem"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "post": {
         "tags": [
-          "Tasks"
+          "TaskItem"
         ],
         "requestBody": {
           "content": {
@@ -704,7 +585,7 @@
     "/tasks/{id}": {
       "get": {
         "tags": [
-          "Tasks"
+          "TaskItem"
         ],
         "parameters": [
           {
@@ -742,7 +623,7 @@
       },
       "put": {
         "tags": [
-          "Tasks"
+          "TaskItem"
         ],
         "parameters": [
           {
@@ -782,7 +663,7 @@
       },
       "delete": {
         "tags": [
-          "Tasks"
+          "TaskItem"
         ],
         "parameters": [
           {
@@ -805,114 +686,183 @@
   },
   "components": {
     "schemas": {
-      "KPI": {
+      "Log": {
+        "required": [
+          "content",
+          "log_type",
+          "severity",
+          "user_id"
+        ],
         "type": "object",
         "properties": {
-          "id": {
+          "log_id": {
             "type": "integer",
             "format": "int32"
           },
-          "memberId": {
+          "user_id": {
             "type": "integer",
             "format": "int32"
           },
-          "member": {
-            "$ref": "#/components/schemas/Member"
-          },
-          "tasksCompleted": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "efficiency": {
-            "type": "number",
-            "format": "double"
-          },
-          "month": {
-            "type": "string",
-            "format": "date-time"
-          }
-        },
-        "additionalProperties": false
-      },
-      "KPICreateDto": {
-        "type": "object",
-        "properties": {
-          "memberId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "tasksCompleted": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "efficiency": {
-            "type": "number",
-            "format": "double"
-          },
-          "month": {
-            "type": "string",
-            "format": "date-time"
-          }
-        },
-        "additionalProperties": false
-      },
-      "KPIUpdateDto": {
-        "type": "object",
-        "properties": {
-          "tasksCompleted": {
+          "task_id": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "efficiency": {
-            "type": "number",
-            "format": "double",
+          "log_type": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "content": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "severity": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LogCreateDto": {
+        "required": [
+          "content",
+          "log_type",
+          "user_id"
+        ],
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "task_id": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           },
-          "month": {
+          "log_type": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "content": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "severity": {
+            "maxLength": 50,
             "type": "string",
-            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LogUpdateDto": {
+        "type": "object",
+        "properties": {
+          "log_type": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "severity": {
+            "maxLength": 50,
+            "type": "string",
             "nullable": true
           }
         },
         "additionalProperties": false
       },
       "Member": {
+        "required": [
+          "email",
+          "full_name",
+          "password_hash",
+          "position",
+          "role"
+        ],
         "type": "object",
         "properties": {
-          "id": {
+          "user_id": {
             "type": "integer",
             "format": "int32"
           },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "role": {
-            "type": "string",
-            "nullable": true
+          "full_name": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
           },
           "email": {
+            "maxLength": 255,
+            "minLength": 1,
             "type": "string",
-            "nullable": true
+            "format": "email"
+          },
+          "password_hash": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "role": {
+            "$ref": "#/components/schemas/RoleType"
+          },
+          "position": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false
       },
       "MemberCreateDto": {
+        "required": [
+          "email",
+          "full_name",
+          "password",
+          "position",
+          "role"
+        ],
         "type": "object",
         "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "role": {
-            "type": "string",
-            "nullable": true
+          "full_name": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
           },
           "email": {
+            "maxLength": 255,
+            "minLength": 1,
             "type": "string",
-            "nullable": true
+            "format": "email"
+          },
+          "password": {
+            "minLength": 6,
+            "type": "string"
+          },
+          "role": {
+            "$ref": "#/components/schemas/RoleType"
+          },
+          "position": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false
@@ -920,15 +870,27 @@
       "MemberUpdateDto": {
         "type": "object",
         "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "role": {
+          "full_name": {
+            "maxLength": 255,
             "type": "string",
             "nullable": true
           },
           "email": {
+            "maxLength": 255,
+            "type": "string",
+            "format": "email",
+            "nullable": true
+          },
+          "password": {
+            "minLength": 6,
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "$ref": "#/components/schemas/RoleType"
+          },
+          "position": {
+            "maxLength": 100,
             "type": "string",
             "nullable": true
           }
@@ -936,81 +898,86 @@
         "additionalProperties": false
       },
       "Report": {
+        "required": [
+          "report_date",
+          "reporter_id"
+        ],
         "type": "object",
         "properties": {
-          "id": {
+          "report_id": {
             "type": "integer",
             "format": "int32"
           },
-          "memberId": {
+          "reporter_id": {
             "type": "integer",
             "format": "int32"
           },
-          "member": {
-            "$ref": "#/components/schemas/Member"
-          },
-          "reportTitle": {
-            "type": "string",
-            "nullable": true
-          },
-          "summary": {
-            "type": "string",
-            "nullable": true
-          },
-          "createdAt": {
+          "report_date": {
             "type": "string",
             "format": "date-time"
           },
-          "taskId": {
+          "total_requests": {
             "type": "integer",
-            "format": "int32",
+            "format": "int32"
+          },
+          "failed_requests": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kpi_crud_auth_perc": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "report_status": {
+            "maxLength": 50,
+            "type": "string",
             "nullable": true
           },
-          "task": {
-            "$ref": "#/components/schemas/TaskItem"
+          "report_summary": {
+            "type": "string",
+            "nullable": true
           },
-          "tasksCompleted": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "tasksPending": {
-            "type": "integer",
-            "format": "int32"
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false
       },
       "ReportCreateDto": {
+        "required": [
+          "reporter_id"
+        ],
         "type": "object",
         "properties": {
-          "memberId": {
+          "reporter_id": {
             "type": "integer",
             "format": "int32"
           },
-          "reportTitle": {
-            "type": "string",
-            "nullable": true
-          },
-          "summary": {
-            "type": "string",
-            "nullable": true
-          },
-          "createdAt": {
+          "report_date": {
             "type": "string",
             "format": "date-time",
             "nullable": true
           },
-          "tasksCompleted": {
+          "total_requests": {
             "type": "integer",
             "format": "int32"
           },
-          "tasksPending": {
+          "failed_requests": {
             "type": "integer",
             "format": "int32"
           },
-          "taskId": {
+          "kpi_crud_auth_perc": {
             "type": "integer",
-            "format": "int32",
+            "format": "int32"
+          },
+          "report_status": {
+            "maxLength": 50,
+            "type": "string",
+            "nullable": true
+          },
+          "report_summary": {
+            "type": "string",
             "nullable": true
           }
         },
@@ -1019,138 +986,75 @@
       "ReportUpdateDto": {
         "type": "object",
         "properties": {
-          "reportTitle": {
-            "type": "string",
-            "nullable": true
-          },
-          "summary": {
-            "type": "string",
-            "nullable": true
-          },
-          "tasksCompleted": {
+          "total_requests": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "tasksPending": {
+          "failed_requests": {
             "type": "integer",
             "format": "int32",
+            "nullable": true
+          },
+          "kpi_crud_auth_perc": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "report_status": {
+            "maxLength": 50,
+            "type": "string",
+            "nullable": true
+          },
+          "report_summary": {
+            "type": "string",
             "nullable": true
           }
         },
         "additionalProperties": false
+      },
+      "RoleType": {
+        "enum": [
+          "Backend_Developer",
+          "Lead_Developer",
+          "Founder"
+        ],
+        "type": "string"
       },
       "TaskCreateDto": {
-        "type": "object",
-        "properties": {
-          "taskTitle": {
-            "type": "string",
-            "nullable": true
-          },
-          "status": {
-            "type": "string",
-            "nullable": true
-          },
-          "deadline": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "memberId": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "TaskItem": {
         "required": [
-          "memberName",
-          "status",
-          "taskTitle"
+          "assignee_id",
+          "assigner_id",
+          "title"
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "memberName": {
-            "maxLength": 200,
+          "title": {
+            "maxLength": 255,
             "minLength": 1,
             "type": "string"
           },
-          "taskTitle": {
-            "maxLength": 500,
-            "minLength": 1,
-            "type": "string"
-          },
-          "status": {
-            "maxLength": 50,
-            "minLength": 1,
-            "type": "string"
-          },
-          "deadline": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "memberId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "member": {
-            "$ref": "#/components/schemas/Member"
-          }
-        },
-        "additionalProperties": false
-      },
-      "TaskLog": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "taskId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "task": {
-            "$ref": "#/components/schemas/TaskItem"
-          },
-          "memberId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "member": {
-            "$ref": "#/components/schemas/Member"
-          },
-          "oldStatus": {
+          "description": {
             "type": "string",
             "nullable": true
           },
-          "newStatus": {
-            "type": "string",
+          "assigner_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "assignee_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "collaborators": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
             "nullable": true
           },
-          "changedAt": {
-            "type": "string",
-            "format": "date-time"
-          }
-        },
-        "additionalProperties": false
-      },
-      "TaskUpdateDto": {
-        "type": "object",
-        "properties": {
-          "taskTitle": {
-            "type": "string",
-            "nullable": true
-          },
-          "status": {
+          "expected_output": {
             "type": "string",
             "nullable": true
           },
@@ -1159,9 +1063,142 @@
             "format": "date-time",
             "nullable": true
           },
-          "memberId": {
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "progress_percentage": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "notion_link": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TaskItem": {
+        "required": [
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "task_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "assigner_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "assignee_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "collaborators": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "expected_output": {
+            "type": "string",
+            "nullable": true
+          },
+          "deadline": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "status": {
+            "maxLength": 50,
+            "type": "string",
+            "nullable": true
+          },
+          "progress_percentage": {
+            "maximum": 100,
+            "minimum": 0,
+            "type": "integer",
+            "format": "int32"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "notion_link": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TaskUpdateDto": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "assigner_id": {
             "type": "integer",
             "format": "int32",
+            "nullable": true
+          },
+          "assignee_id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "collaborators": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "expected_output": {
+            "type": "string",
+            "nullable": true
+          },
+          "deadline": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "progress_percentage": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "notion_link": {
+            "type": "string",
             "nullable": true
           }
         },

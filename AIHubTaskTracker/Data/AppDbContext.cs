@@ -9,61 +9,67 @@ namespace AIHubTaskTracker.Data
 
         public DbSet<Member> Members { get; set; }
         public DbSet<TaskItem> Tasks { get; set; }
-        public DbSet<KPI> Kpis { get; set; }
+        public DbSet<Log> Logs { get; set; }
         public DbSet<Report> Reports { get; set; }
-        public DbSet<TaskLog> TaskLogs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
+            // ---- Member ----
+            modelBuilder.Entity<Member>()
+                .HasIndex(m => m.email)
+                .IsUnique(); // Không trùng email
+
+            // ---- Task ----
             modelBuilder.Entity<TaskItem>()
-                .Property(t => t.CreatedAt)
+                .HasOne(t => t.assigner)
+                .WithMany(m => m.created_tasks)
+                .HasForeignKey(t => t.assigner_id)
+                .OnDelete(DeleteBehavior.Cascade); // Xóa Member thì  xóa Task được giao bởi Member
+
+            modelBuilder.Entity<TaskItem>()
+                .HasOne(t => t.assignee)
+                .WithMany(m => m.assigned_tasks)
+                .HasForeignKey(t => t.assignee_id)
+                .OnDelete(DeleteBehavior.Cascade); // Xóa Member thì xóa Task được giao cho Member
+
+            // ---- Log ----
+            modelBuilder.Entity<Log>()
+                .HasOne(l => l.user)
+                .WithMany(m => m.logs)
+                .HasForeignKey(l => l.user_id)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Log>()
+                .HasOne(l => l.task)
+                .WithMany(t => t.logs)
+                .HasForeignKey(l => l.task_id)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // ---- Report ----
+            modelBuilder.Entity<Report>()
+                .HasOne(r => r.reporter)
+                .WithMany(m => m.reports)
+                .HasForeignKey(r => r.reporter_id)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // ---- Datetime fields ----
+            modelBuilder.Entity<TaskItem>()
+                .Property(t => t.created_at)
                 .HasColumnType("timestamp with time zone");
 
             modelBuilder.Entity<TaskItem>()
-                .Property(t => t.Deadline)
+                .Property(t => t.updated_at)
                 .HasColumnType("timestamp with time zone");
 
             modelBuilder.Entity<Report>()
-                .Property(r => r.CreatedAt)
+                .Property(r => r.created_at)
                 .HasColumnType("timestamp with time zone");
 
-            modelBuilder.Entity<KPI>()
-                .Property(k => k.Month)
+            modelBuilder.Entity<Log>()
+                .Property(l => l.created_at)
                 .HasColumnType("timestamp with time zone");
-
-            modelBuilder.Entity<TaskLog>()
-                .Property(tl => tl.ChangedAt)
-                .HasColumnType("timestamp with time zone");
-        }
-
-        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
-        {
-            // Tìm các TaskItem bị modify
-            var modifiedTasks = ChangeTracker.Entries<TaskItem>()
-                                             .Where(e => e.State == EntityState.Modified);
-
-            foreach (var entry in modifiedTasks)
-            {
-                var oldStatus = entry.OriginalValues.GetValue<string>("Status");
-                var newStatus = entry.CurrentValues.GetValue<string>("Status");
-
-                // Nếu status thay đổi thì tạo log
-                if (oldStatus != newStatus)
-                {
-                    TaskLogs.Add(new TaskLog
-                    {
-                        TaskId = entry.Entity.Id,
-                        MemberId = entry.Entity.MemberId, // Member chịu trách nhiệm task
-                        OldStatus = oldStatus,
-                        NewStatus = newStatus,
-                        ChangedAt = DateTime.UtcNow
-                    });
-                }
-            }
-
-            return await base.SaveChangesAsync(cancellationToken);
         }
     }
 }
