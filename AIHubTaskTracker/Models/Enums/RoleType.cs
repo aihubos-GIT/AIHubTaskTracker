@@ -4,6 +4,8 @@
     {
         Backend_Developer, 
         Lead_Developer,
+        Fullstack_Developer,
         Founder
     }
+   
 }

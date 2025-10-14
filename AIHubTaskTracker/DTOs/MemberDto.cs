@@ -22,8 +22,7 @@ namespace AIHubTaskTracker.DTOs
         public RoleType role { get; set; }
 
         [Required(ErrorMessage = "Vị trí không được để trống.")]
-        [MaxLength(100)]
-        public string position { get; set; } = null!;
+        public PositionType position { get; set; }
     }
     public class MemberUpdateDto
     {
@@ -37,9 +36,8 @@ namespace AIHubTaskTracker.DTOs
         [MinLength(6, ErrorMessage = "Mật khẩu phải có ít nhất 6 ký tự.")]
         public string? password { get; set; }
 
-        public RoleType? role { get; set; }
+        public RoleType role { get; set; }
 
-        [MaxLength(100)]
-        public string? position { get; set; }
+        public PositionType position { get; set; }
     }
 }

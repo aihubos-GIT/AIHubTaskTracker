@@ -26,7 +26,7 @@ namespace AIHubTaskTracker.Models
         public RoleType role { get; set; } //  Vai trò trong hệ thống (VD: Backend_Developer, Lead_Developer, Founder)
 
         [Required, MaxLength(100)]
-        public string position { get; set; } = null!; //  Vị trí công việc (VD: Backend Developer / API Integration Engineer)
+        public PositionType position { get; set; }  //  Vị trí công việc (VD: Backend Developer / API Integration Engineer)
 
         public DateTime created_at { get; set; } = DateTime.Now; //  Ngày tạo tài khoản
         public DateTime updated_at { get; set; } = DateTime.Now; //  Ngày cập nhật gần nhất

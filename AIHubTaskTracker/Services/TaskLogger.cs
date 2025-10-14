@@ -6,7 +6,7 @@ namespace AIHubTaskTracker.Services
     {
         private static readonly string logPath = "task_log.txt";
 
-        public static void Log(string action, TaskItem task)
+        public static void Log(string action, Models.TaskItem task)
         {
             var status = task.status ?? "Unknown";
             var text = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] {action}: Task {task.task_id} - {task.title} ({status})";
@@ -14,7 +14,7 @@ namespace AIHubTaskTracker.Services
         }
 
         // Nếu muốn async
-        public static async Task LogAsync(string action, TaskItem task)
+        public static async System.Threading.Tasks.Task LogAsync(string action, Models.TaskItem task)
         {
             var status = task.status ?? "Unknown";
             var text = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] {action}: Task {task.task_id} - {task.title} ({status})";

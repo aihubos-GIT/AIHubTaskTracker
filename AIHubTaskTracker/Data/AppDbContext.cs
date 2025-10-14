@@ -8,9 +8,10 @@ namespace AIHubTaskTracker.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Member> Members { get; set; }
-        public DbSet<TaskItem> Tasks { get; set; }
+        public DbSet<Models.TaskItem> Tasks { get; set; }
         public DbSet<Log> Logs { get; set; }
         public DbSet<Report> Reports { get; set; }
+        public DbSet<BlacklistedTokens> BlacklistedTokens { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -22,13 +23,13 @@ namespace AIHubTaskTracker.Data
                 .IsUnique(); // Không trùng email
 
             // ---- Task ----
-            modelBuilder.Entity<TaskItem>()
+            modelBuilder.Entity<Models.TaskItem>()
                 .HasOne(t => t.assigner)
                 .WithMany(m => m.created_tasks)
                 .HasForeignKey(t => t.assigner_id)
                 .OnDelete(DeleteBehavior.Cascade); // Xóa Member thì  xóa Task được giao bởi Member
 
-            modelBuilder.Entity<TaskItem>()
+            modelBuilder.Entity<Models.TaskItem>()
                 .HasOne(t => t.assignee)
                 .WithMany(m => m.assigned_tasks)
                 .HasForeignKey(t => t.assignee_id)

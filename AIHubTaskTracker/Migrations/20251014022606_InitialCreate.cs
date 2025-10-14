@@ -8,11 +8,27 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace AIHubTaskTracker.Migrations
 {
     /// <inheritdoc />
-    public partial class BuildDB : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "BlacklistedTokens",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Token = table.Column<string>(type: "text", nullable: false),
+                    UserId = table.Column<int>(type: "integer", nullable: false),
+                    RevokedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    ExpiresAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BlacklistedTokens", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Members",
                 columns: table => new
@@ -23,7 +39,7 @@ namespace AIHubTaskTracker.Migrations
                     email = table.Column<string>(type: "character varying(255)", maxLength: 255, nullable: false),
                     password_hash = table.Column<string>(type: "text", nullable: false),
                     role = table.Column<int>(type: "integer", nullable: false),
-                    position = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    position = table.Column<int>(type: "integer", maxLength: 100, nullable: false),
                     created_at = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     updated_at = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
@@ -159,6 +175,9 @@ namespace AIHubTaskTracker.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "BlacklistedTokens");
+
             migrationBuilder.DropTable(
                 name: "Logs");
 

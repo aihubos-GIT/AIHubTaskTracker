@@ -5,29 +5,72 @@
     "version": "v1"
   },
   "paths": {
-    "/": {
-      "get": {
+    "/api/v1/auth/register": {
+      "post": {
         "tags": [
-          "AIHubTaskTracker"
+          "Auth"
         ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemberCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemberCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemberCreateDto"
               }
             }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
     },
-    "/logs": {
+    "/api/v1/auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/users/profile": {
       "get": {
         "tags": [
-          "Logs"
+          "Auth"
         ],
         "responses": {
           "200": {
@@ -35,6 +78,49 @@
           }
         }
       },
+      "put": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemberUpdateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemberUpdateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemberUpdateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/auth/logout": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/logs": {
       "post": {
         "tags": [
           "Logs"
@@ -43,53 +129,46 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LogCreateDto"
+                "$ref": "#/components/schemas/Log"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/LogCreateDto"
+                "$ref": "#/components/schemas/Log"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/LogCreateDto"
+                "$ref": "#/components/schemas/Log"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Log"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Log"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Log"
-                }
-              }
-            }
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Logs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
     },
-    "/logs/{id}": {
+    "/api/v1/tasks/{task_id}/logs": {
       "get": {
         "tags": [
           "Logs"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "task_id",
             "in": "path",
             "required": true,
             "schema": {
@@ -100,57 +179,43 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Log"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Log"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Log"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
-      },
-      "put": {
+      }
+    },
+    "/api/v1/reports/telegram-trigger": {
+      "post": {
         "tags": [
-          "Logs"
+          "Reports"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
+        "responses": {
+          "200": {
+            "description": "OK"
           }
+        }
+      }
+    },
+    "/api/v1/tasks": {
+      "post": {
+        "tags": [
+          "TasksItem"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LogUpdateDto"
+                "$ref": "#/components/schemas/TaskCreateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/LogUpdateDto"
+                "$ref": "#/components/schemas/TaskCreateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/LogUpdateDto"
+                "$ref": "#/components/schemas/TaskCreateDto"
               }
             }
           }
@@ -161,82 +226,27 @@
           }
         }
       },
-      "delete": {
-        "tags": [
-          "Logs"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Members": {
       "get": {
         "tags": [
-          "Members"
+          "TasksItem"
         ],
         "parameters": [
           {
-            "name": "page",
+            "name": "status",
             "in": "query",
             "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 1
+              "type": "string"
             }
           },
           {
-            "name": "pageSize",
+            "name": "assignee_id",
             "in": "query",
             "schema": {
               "type": "integer",
-              "format": "int32",
-              "default": 10
+              "format": "int32"
             }
           }
         ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Members"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MemberCreateDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MemberCreateDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/MemberCreateDto"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"
@@ -244,10 +254,10 @@
         }
       }
     },
-    "/api/Members/{id}": {
+    "/api/v1/tasks/{id}": {
       "get": {
         "tags": [
-          "Members"
+          "TasksItem"
         ],
         "parameters": [
           {
@@ -262,368 +272,13 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Member"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Member"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Member"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       },
       "put": {
         "tags": [
-          "Members"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MemberUpdateDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MemberUpdateDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/MemberUpdateDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Members"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/reports": {
-      "get": {
-        "tags": [
-          "Reports"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Reports"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ReportCreateDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ReportCreateDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ReportCreateDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Report"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Report"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Report"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/reports/{id}": {
-      "get": {
-        "tags": [
-          "Reports"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Report"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Report"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Report"
-                }
-              }
-            }
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Reports"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ReportUpdateDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ReportUpdateDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ReportUpdateDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Reports"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/tasks": {
-      "get": {
-        "tags": [
-          "TaskItem"
-        ],
-        "parameters": [
-          {
-            "name": "page",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 1
-            }
-          },
-          {
-            "name": "pageSize",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 10
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "TaskItem"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/TaskCreateDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/TaskCreateDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/TaskCreateDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/TaskItem"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/TaskItem"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/TaskItem"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/tasks/{id}": {
-      "get": {
-        "tags": [
-          "TaskItem"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/TaskItem"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/TaskItem"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/TaskItem"
-                }
-              }
-            }
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "TaskItem"
+          "TasksItem"
         ],
         "parameters": [
           {
@@ -663,7 +318,7 @@
       },
       "delete": {
         "tags": [
-          "TaskItem"
+          "TasksItem"
         ],
         "parameters": [
           {
@@ -729,104 +384,16 @@
         },
         "additionalProperties": false
       },
-      "LogCreateDto": {
-        "required": [
-          "content",
-          "log_type",
-          "user_id"
-        ],
+      "LoginDto": {
         "type": "object",
         "properties": {
-          "user_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "task_id": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "log_type": {
-            "maxLength": 100,
-            "minLength": 1,
-            "type": "string"
-          },
-          "content": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "severity": {
-            "maxLength": 50,
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "LogUpdateDto": {
-        "type": "object",
-        "properties": {
-          "log_type": {
-            "maxLength": 100,
-            "type": "string",
-            "nullable": true
-          },
-          "content": {
-            "type": "string",
-            "nullable": true
-          },
-          "severity": {
-            "maxLength": 50,
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Member": {
-        "required": [
-          "email",
-          "full_name",
-          "password_hash",
-          "position",
-          "role"
-        ],
-        "type": "object",
-        "properties": {
-          "user_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "full_name": {
-            "maxLength": 255,
-            "minLength": 1,
-            "type": "string"
-          },
           "email": {
-            "maxLength": 255,
-            "minLength": 1,
             "type": "string",
-            "format": "email"
+            "nullable": true
           },
-          "password_hash": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "role": {
-            "$ref": "#/components/schemas/RoleType"
-          },
-          "position": {
-            "maxLength": 100,
-            "minLength": 1,
-            "type": "string"
-          },
-          "created_at": {
+          "password": {
             "type": "string",
-            "format": "date-time"
-          },
-          "updated_at": {
-            "type": "string",
-            "format": "date-time"
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -860,9 +427,7 @@
             "$ref": "#/components/schemas/RoleType"
           },
           "position": {
-            "maxLength": 100,
-            "minLength": 1,
-            "type": "string"
+            "$ref": "#/components/schemas/PositionType"
           }
         },
         "additionalProperties": false
@@ -890,133 +455,27 @@
             "$ref": "#/components/schemas/RoleType"
           },
           "position": {
-            "maxLength": 100,
-            "type": "string",
-            "nullable": true
+            "$ref": "#/components/schemas/PositionType"
           }
         },
         "additionalProperties": false
       },
-      "Report": {
-        "required": [
-          "report_date",
-          "reporter_id"
+      "PositionType": {
+        "enum": [
+          "Backend_Developer",
+          "API_Integration_Engineer",
+          "Fullstack_Developer",
+          "Project_Manager",
+          "DevOps_Engineer",
+          "QA_Engineer"
         ],
-        "type": "object",
-        "properties": {
-          "report_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "reporter_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "report_date": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "total_requests": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "failed_requests": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "kpi_crud_auth_perc": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "report_status": {
-            "maxLength": 50,
-            "type": "string",
-            "nullable": true
-          },
-          "report_summary": {
-            "type": "string",
-            "nullable": true
-          },
-          "created_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ReportCreateDto": {
-        "required": [
-          "reporter_id"
-        ],
-        "type": "object",
-        "properties": {
-          "reporter_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "report_date": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "total_requests": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "failed_requests": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "kpi_crud_auth_perc": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "report_status": {
-            "maxLength": 50,
-            "type": "string",
-            "nullable": true
-          },
-          "report_summary": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ReportUpdateDto": {
-        "type": "object",
-        "properties": {
-          "total_requests": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "failed_requests": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "kpi_crud_auth_perc": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "report_status": {
-            "maxLength": 50,
-            "type": "string",
-            "nullable": true
-          },
-          "report_summary": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
+        "type": "string"
       },
       "RoleType": {
         "enum": [
           "Backend_Developer",
           "Lead_Developer",
+          "Fullstack_Developer",
           "Founder"
         ],
         "type": "string"
@@ -1078,77 +537,6 @@
         },
         "additionalProperties": false
       },
-      "TaskItem": {
-        "required": [
-          "title"
-        ],
-        "type": "object",
-        "properties": {
-          "task_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "title": {
-            "maxLength": 255,
-            "minLength": 1,
-            "type": "string"
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "assigner_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "assignee_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "collaborators": {
-            "type": "array",
-            "items": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "nullable": true
-          },
-          "expected_output": {
-            "type": "string",
-            "nullable": true
-          },
-          "deadline": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "status": {
-            "maxLength": 50,
-            "type": "string",
-            "nullable": true
-          },
-          "progress_percentage": {
-            "maximum": 100,
-            "minimum": 0,
-            "type": "integer",
-            "format": "int32"
-          },
-          "created_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "updated_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "notion_link": {
-            "maxLength": 255,
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "TaskUpdateDto": {
         "type": "object",
         "properties": {
@@ -1204,6 +592,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Nhập 'Bearer {token}' để xác thực",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

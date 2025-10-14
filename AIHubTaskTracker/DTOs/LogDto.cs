@@ -10,14 +10,15 @@ namespace AIHubTaskTracker.DTOs
 
         public int? task_id { get; set; }
 
-        [Required, MaxLength(100)]
-        public string log_type { get; set; } = null!;
+        [Required]
+        [MaxLength(100)]
+        public string log_type { get; set; } = string.Empty;
 
         [Required]
-        public string content { get; set; } = null!;
+        public string content { get; set; } = string.Empty;
 
         [MaxLength(50)]
-        public string? severity { get; set; } = "INFO";
+        public string severity { get; set; } = "INFO";
     }
 
     public class LogUpdateDto
