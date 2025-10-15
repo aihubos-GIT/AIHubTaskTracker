@@ -4,6 +4,8 @@ using System.Text;
 using AIHubTaskTracker.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using AIHubTaskTracker.Services;
+using System.Net.Http.Headers;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -86,6 +88,27 @@ builder.Services.AddAuthentication(options =>
 
 var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
+builder.Services.AddHttpClient();
+builder.Services.AddHttpClient<ClickUpService>(client =>
+{
+    client.BaseAddress = new Uri("https://api.clickup.com/api/v2/");
+    client.DefaultRequestHeaders.Authorization =
+        new AuthenticationHeaderValue("Bearer", builder.Configuration["ClickUp:ApiToken"]);
+});
+builder.Services.AddSingleton(provider =>
+    new ClickUpService(
+        provider.GetRequiredService<HttpClient>(),
+        builder.Configuration["ClickUp:ApiToken"],
+        builder.Configuration["ClickUp:ListId"]
+    )
+);
+
+
+builder.Services.AddSingleton(new TelegramService(
+    new HttpClient(),
+    builder.Configuration["Telegram:BotToken"],
+    builder.Configuration["Telegram:ChatId"]
+));
 
 var app = builder.Build();
 

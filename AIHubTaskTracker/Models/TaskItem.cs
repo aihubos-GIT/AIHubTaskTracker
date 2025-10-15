@@ -48,5 +48,6 @@ namespace AIHubTaskTracker.Models
 
         [JsonIgnore]
         public ICollection<Log> logs { get; set; } = new List<Log>(); //  Nhật ký hành động (liên kết Log)
+        public string? clickup_id { get; set; }
     }
 }
