@@ -141,7 +141,18 @@ public class TasksItemController : ControllerBase
         }
         return Ok(await query.ToListAsync());
     }
+    [HttpGet("{id:int}")]
+    public async Task<IActionResult> GetById(int id)
+    {
+        var task = await _db.Tasks.FirstOrDefaultAsync(t => t.task_id == id);
 
+        if (task == null)
+        {
+            return NotFound(new { message = $"Task ID {id} không tồn tại." });
+        }
+
+        return Ok(task);
+    }
 
 
     // Trong TasksItemController.cs
