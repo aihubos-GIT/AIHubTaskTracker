@@ -42,7 +42,7 @@ public class TasksItemController : ControllerBase
 
 
     [HttpPost]
-    public async Task<IActionResult> Create(TaskCreateDto dto)
+    public async Task<IActionResult> Create([FromBody] TaskCreateDto dto)
     {
         
         // 1. Chuẩn hóa Status Value (Dùng TO DO nếu DTO không cung cấp)
@@ -131,8 +131,16 @@ public class TasksItemController : ControllerBase
 
 
     [HttpGet]
+    public async Task<IActionResult> GetAll([FromQuery] int? assignee_id) 
+    {
+        var query = _db.Tasks.AsQueryable();
 
-    public async Task<IActionResult> GetAll() => Ok(await _db.Tasks.ToListAsync());
+        if (assignee_id.HasValue && assignee_id.Value != 0)
+        {
+            query = query.Where(t => t.assignee_id == assignee_id.Value);
+        }
+        return Ok(await query.ToListAsync());
+    }
 
 
 
