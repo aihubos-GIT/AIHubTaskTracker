@@ -68,6 +68,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AIHubTaskTracker.Controllers.Api.MembersController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/Members",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ReportsController",
     "Method": "TelegramTrigger",
     "RelativePath": "api/v1/reports/telegram-trigger",

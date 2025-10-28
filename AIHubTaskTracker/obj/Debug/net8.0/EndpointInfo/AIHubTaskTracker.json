@@ -184,6 +184,18 @@
         }
       }
     },
+    "/api/v1/Members": {
+      "get": {
+        "tags": [
+          "Members"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/reports/telegram-trigger": {
       "post": {
         "tags": [
