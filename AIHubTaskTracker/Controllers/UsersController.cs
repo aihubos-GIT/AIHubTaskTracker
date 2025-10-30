@@ -27,11 +27,15 @@ namespace AIHubTaskTracker.Controllers.Api
                     name = m.full_name, 
                     email = m.email,
                     role = m.role,
-                    position = m.position
+                    position = m.position,
+                    avatar_url = m.avatar_url,// default
+                    status = m.status // mặc định online
                 })
                 .ToListAsync();
 
             return Ok(members);
         }
+
+
     }
 }

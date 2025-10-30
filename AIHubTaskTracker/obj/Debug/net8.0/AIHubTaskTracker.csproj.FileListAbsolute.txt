@@ -363,3 +363,4 @@ D:\BE AIHUB\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\refint\AIHubTaskT
 D:\BE AIHUB\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\AIHubTaskTracker.pdb
 D:\BE AIHUB\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\AIHubTaskTracker.genruntimeconfig.cache
 D:\BE AIHUB\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\ref\AIHubTaskTracker.dll
+D:\BE AIHUB\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

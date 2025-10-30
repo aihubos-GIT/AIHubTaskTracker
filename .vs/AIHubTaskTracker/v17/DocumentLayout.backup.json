@@ -3,6 +3,63 @@
   "WorkspaceRootPath": "D:\\BE AIHUB\\AIHubTaskTracker\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\aihubtasktracker.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\aihubtasktracker.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\services\\clickupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\services\\clickupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\services\\tasklogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\services\\tasklogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\aihubtasktracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\aihubtasktracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\AppData\\Local\\SourceServer\\f3c8454290680822b9d71c318f1e5db9ac900b8a81cf9b527a5b358aef200eea\\AIHubTaskTracker\\Migrations\\20251030085831_UpdateMember.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\AppData\\Local\\SourceServer\\42810e0741452c6f140c31a2db1d76c59f65051bec409802d0874d760952c061\\AIHubTaskTracker\\Migrations\\20251030085831_UpdateMember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PC\\AppData\\Local\\SourceServer\\30305796c8696751c2d4d52725848303483118607c04242704659bcc4d45fbd8\\AIHubTaskTracker\\DTOs\\MemberDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\middleware\\jwtblacklistmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\middleware\\jwtblacklistmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\controllers\\logscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\controllers\\logscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\controllers\\taskitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\controllers\\taskitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,36 +80,8 @@
       "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\models\\enums\\clickupstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\controllers\\taskitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\controllers\\taskitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\controllers\\logscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\controllers\\logscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\services\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\services\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,10 +100,6 @@
       "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\services\\clickupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\services\\clickupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\extensions\\enumextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\extensions\\enumextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -83,20 +108,8 @@
       "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\dtos\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\services\\tasklogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\services\\tasklogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\services\\tokencleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\services\\tokencleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\middleware\\jwtblacklistmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\middleware\\jwtblacklistmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\aihubtasktracker.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\aihubtasktracker.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\models\\blacklistedtokens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -119,10 +132,6 @@
       "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\dtos\\logdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|d:\\be aihub\\aihubtasktracker\\aihubtasktracker\\aihubtasktracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{28C5ED2E-2928-4CC7-BCCF-70426CD2A991}|AIHubTaskTracker\\AIHubTaskTracker.csproj|solutionrelative:aihubtasktracker\\aihubtasktracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\AIHubTaskTracker\\AIHubTaskTracker\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
@@ -136,162 +145,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "AIHubTaskTracker\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\AuthController.cs",
               "RelativeToolTip": "AIHubTaskTracker\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAAowLwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T00:18:54.714Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Controllers\\UsersController.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T12:58:33.753Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StatusType.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\StatusType.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\Enums\\StatusType.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\StatusType.cs*",
-              "RelativeToolTip": "AIHubTaskTracker\\Models\\Enums\\StatusType.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T08:57:07.815Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\UsersController.cs*",
+              "RelativeToolTip": "AIHubTaskTracker\\Controllers\\UsersController.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwB4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T12:58:33.753Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClickUpService.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Services\\ClickUpService.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Services\\ClickUpService.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Services\\ClickUpService.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Services\\ClickUpService.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAAALEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T04:25:44.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Program.cs",
               "RelativeDocumentMoniker": "AIHubTaskTracker\\Program.cs",
               "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Program.cs",
               "RelativeToolTip": "AIHubTaskTracker\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T11:25:14.621Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Member.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Member.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\Member.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Member.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Models\\Member.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAUwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T09:16:16.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClickUpStatus.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\ClickUpStatus.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\Enums\\ClickUpStatus.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\ClickUpStatus.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Models\\Enums\\ClickUpStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T11:15:29.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PositionType.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\PositionType.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\Enums\\PositionType.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\PositionType.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Models\\Enums\\PositionType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T02:38:25.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RoleType.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\RoleType.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\Enums\\RoleType.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\RoleType.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Models\\Enums\\RoleType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T06:17:09.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LogsController.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\LogsController.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Controllers\\LogsController.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\LogsController.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Controllers\\LogsController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwBoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T11:18:49.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TaskItemController.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\TaskItemController.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Controllers\\TaskItemController.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\TaskItemController.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Controllers\\TaskItemController.cs",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAkwKMAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T11:18:59.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ReportController.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\ReportController.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Controllers\\ReportController.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\ReportController.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Controllers\\ReportController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T10:44:30.495Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TelegramService.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Services\\TelegramService.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Services\\TelegramService.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Services\\TelegramService.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Services\\TelegramService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T04:26:11.543Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\appsettings.json",
               "RelativeDocumentMoniker": "AIHubTaskTracker\\appsettings.json",
@@ -303,207 +213,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TaskItem.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\TaskItem.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\TaskItem.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\TaskItem.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Models\\TaskItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T11:21:02.566Z"
+              "DocumentIndex": 2,
+              "Title": "AIHubTaskTracker.http",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\AIHubTaskTracker.http",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\AIHubTaskTracker.http",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\AIHubTaskTracker.http",
+              "RelativeToolTip": "AIHubTaskTracker\\AIHubTaskTracker.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-10-09T11:18:46.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Data\\AppDbContext.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAkwCMAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T11:21:15.661Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Report.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Report.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\Report.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Report.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Models\\Report.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAqwAgAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T09:17:09.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "TokenCleanupService.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Services\\TokenCleanupService.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Services\\TokenCleanupService.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Services\\TokenCleanupService.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Services\\TokenCleanupService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBEAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T02:00:14.882Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Log.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Log.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\Log.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Log.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Models\\Log.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T12:10:24.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "MemberDto.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\MemberDto.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\DTOs\\MemberDto.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\MemberDto.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\DTOs\\MemberDto.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T03:21:13.109Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ClickUpService.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Services\\ClickUpService.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Services\\ClickUpService.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Services\\ClickUpService.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Services\\ClickUpService.cs",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAgwMYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T04:25:44.155Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "EnumExtensions.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Extensions\\EnumExtensions.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Extensions\\EnumExtensions.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Extensions\\EnumExtensions.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Extensions\\EnumExtensions.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T11:18:49.013Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "JwtBlacklistMiddleware.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Middleware\\JwtBlacklistMiddleware.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Middleware\\JwtBlacklistMiddleware.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Middleware\\JwtBlacklistMiddleware.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Middleware\\JwtBlacklistMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T01:54:25.515Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "BlacklistedTokens.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\BlacklistedTokens.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\BlacklistedTokens.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\BlacklistedTokens.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\Models\\BlacklistedTokens.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T01:26:56.295Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\LoginDto.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\DTOs\\LoginDto.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\LoginDto.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\DTOs\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T00:19:19.076Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "LogDto.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\LogDto.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\DTOs\\LogDto.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\LogDto.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\DTOs\\LogDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T11:18:16.857Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "TaskDto.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\TaskDto.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\DTOs\\TaskDto.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\TaskDto.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\DTOs\\TaskDto.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwDQAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T11:28:17.046Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ReportDto.cs",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\ReportDto.cs",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\DTOs\\ReportDto.cs",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\ReportDto.cs",
-              "RelativeToolTip": "AIHubTaskTracker\\DTOs\\ReportDto.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowBwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T11:27:00.88Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 6,
               "Title": "TaskLogger.cs",
               "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Services\\TaskLogger.cs",
               "RelativeDocumentMoniker": "AIHubTaskTracker\\Services\\TaskLogger.cs",
               "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Services\\TaskLogger.cs",
               "RelativeToolTip": "AIHubTaskTracker\\Services\\TaskLogger.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAQAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-11T09:18:42.065Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "D:\\AIHubTaskTracker\\AIHubTaskTracker\\Dockerfile",
-              "RelativeDocumentMoniker": "..\\..\\AIHubTaskTracker\\AIHubTaskTracker\\Dockerfile",
-              "ToolTip": "D:\\AIHubTaskTracker\\AIHubTaskTracker\\Dockerfile",
-              "RelativeToolTip": "..\\..\\AIHubTaskTracker\\AIHubTaskTracker\\Dockerfile",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-09T13:58:53.251Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "dbo.Tasks.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AIHubTaskTrackerDb/True/SqlTable/dbo.Tasks.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AIHubTaskTrackerDb/True/SqlTable/dbo.Tasks.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-10-09T12:16:59.631Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 7,
               "Title": "AIHubTaskTracker.csproj",
               "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\AIHubTaskTracker.csproj",
               "RelativeDocumentMoniker": "AIHubTaskTracker\\AIHubTaskTracker.csproj",
@@ -515,15 +249,317 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LogsController.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\LogsController.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Controllers\\LogsController.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\LogsController.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Controllers\\LogsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T11:18:49.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MemberDto.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\AppData\\Local\\SourceServer\\30305796c8696751c2d4d52725848303483118607c04242704659bcc4d45fbd8\\AIHubTaskTracker\\DTOs\\MemberDto.cs",
+              "ToolTip": "C:\\Users\\PC\\AppData\\Local\\SourceServer\\30305796c8696751c2d4d52725848303483118607c04242704659bcc4d45fbd8\\AIHubTaskTracker\\DTOs\\MemberDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:23:35.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20251030085831_UpdateMember.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\AppData\\Local\\SourceServer\\42810e0741452c6f140c31a2db1d76c59f65051bec409802d0874d760952c061\\AIHubTaskTracker\\Migrations\\20251030085831_UpdateMember.cs",
+              "ToolTip": "C:\\Users\\PC\\AppData\\Local\\SourceServer\\42810e0741452c6f140c31a2db1d76c59f65051bec409802d0874d760952c061\\AIHubTaskTracker\\Migrations\\20251030085831_UpdateMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:24:10.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20251030085831_UpdateMember.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\AppData\\Local\\SourceServer\\f3c8454290680822b9d71c318f1e5db9ac900b8a81cf9b527a5b358aef200eea\\AIHubTaskTracker\\Migrations\\20251030085831_UpdateMember.Designer.cs",
+              "ToolTip": "C:\\Users\\PC\\AppData\\Local\\SourceServer\\f3c8454290680822b9d71c318f1e5db9ac900b8a81cf9b527a5b358aef200eea\\AIHubTaskTracker\\Migrations\\20251030085831_UpdateMember.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T09:24:14.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\ReportController.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Controllers\\ReportController.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\ReportController.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Controllers\\ReportController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T10:44:30.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "JwtBlacklistMiddleware.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Middleware\\JwtBlacklistMiddleware.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Middleware\\JwtBlacklistMiddleware.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Middleware\\JwtBlacklistMiddleware.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Middleware\\JwtBlacklistMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T01:54:25.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TaskItemController.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\TaskItemController.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Controllers\\TaskItemController.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Controllers\\TaskItemController.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Controllers\\TaskItemController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAKMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T11:18:59.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PositionType.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\PositionType.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\Enums\\PositionType.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\PositionType.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Models\\Enums\\PositionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T02:38:25.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ClickUpStatus.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\ClickUpStatus.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\Enums\\ClickUpStatus.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\ClickUpStatus.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Models\\Enums\\ClickUpStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T11:15:29.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Member.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Member.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\Member.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Member.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Models\\Member.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwBMAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T09:16:16.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StatusType.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\StatusType.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\Enums\\StatusType.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\StatusType.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Models\\Enums\\StatusType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T08:57:07.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RoleType.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\RoleType.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\Enums\\RoleType.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Enums\\RoleType.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Models\\Enums\\RoleType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T06:17:09.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TelegramService.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Services\\TelegramService.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Services\\TelegramService.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Services\\TelegramService.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Services\\TelegramService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T04:26:11.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TaskItem.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\TaskItem.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\TaskItem.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\TaskItem.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Models\\TaskItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T11:21:02.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwCMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T11:21:15.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Report.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Report.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\Report.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Report.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Models\\Report.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T09:17:09.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TokenCleanupService.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Services\\TokenCleanupService.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Services\\TokenCleanupService.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Services\\TokenCleanupService.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Services\\TokenCleanupService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBEAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T02:00:14.882Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "AIHubTaskTracker.http",
-              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\AIHubTaskTracker.http",
-              "RelativeDocumentMoniker": "AIHubTaskTracker\\AIHubTaskTracker.http",
-              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\AIHubTaskTracker.http",
-              "RelativeToolTip": "AIHubTaskTracker\\AIHubTaskTracker.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-10-09T11:18:46.696Z"
+              "Title": "Log.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Log.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\Log.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\Log.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Models\\Log.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T12:10:24.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MemberDto.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\MemberDto.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\DTOs\\MemberDto.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\MemberDto.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\DTOs\\MemberDto.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T03:21:13.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EnumExtensions.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Extensions\\EnumExtensions.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Extensions\\EnumExtensions.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Extensions\\EnumExtensions.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Extensions\\EnumExtensions.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T11:18:49.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BlacklistedTokens.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\BlacklistedTokens.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\Models\\BlacklistedTokens.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\Models\\BlacklistedTokens.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\Models\\BlacklistedTokens.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T01:26:56.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\DTOs\\LoginDto.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T00:19:19.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "LogDto.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\LogDto.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\DTOs\\LogDto.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\LogDto.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\DTOs\\LogDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T11:18:16.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TaskDto.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\TaskDto.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\DTOs\\TaskDto.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\TaskDto.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\DTOs\\TaskDto.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwDQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T11:28:17.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ReportDto.cs",
+              "DocumentMoniker": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\ReportDto.cs",
+              "RelativeDocumentMoniker": "AIHubTaskTracker\\DTOs\\ReportDto.cs",
+              "ToolTip": "D:\\BE AIHUB\\AIHubTaskTracker\\AIHubTaskTracker\\DTOs\\ReportDto.cs",
+              "RelativeToolTip": "AIHubTaskTracker\\DTOs\\ReportDto.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowBwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T11:27:00.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\AIHubTaskTracker\\AIHubTaskTracker\\Dockerfile",
+              "RelativeDocumentMoniker": "..\\..\\AIHubTaskTracker\\AIHubTaskTracker\\Dockerfile",
+              "ToolTip": "D:\\AIHubTaskTracker\\AIHubTaskTracker\\Dockerfile",
+              "RelativeToolTip": "..\\..\\AIHubTaskTracker\\AIHubTaskTracker\\Dockerfile",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-09T13:58:53.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "dbo.Tasks.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AIHubTaskTrackerDb/True/SqlTable/dbo.Tasks.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AIHubTaskTrackerDb/True/SqlTable/dbo.Tasks.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-10-09T12:16:59.631Z"
             }
           ]
         }
