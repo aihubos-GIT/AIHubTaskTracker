@@ -56,13 +56,13 @@ public class TasksItemController : ControllerBase
             }
 
             // Gửi log Telegram
-            await _telegram.SendMessageAsync($"🆕 Task mới được tạo:\n*{task.title}*\nNgười giao: `{task.assigner_id}` → Người nhận: `{task.assignee_id}`");
+            await _telegram.SendMessageAsync($" Task mới được tạo:\n*{task.title}*\nNgười giao: `{task.assigner_id}` → Người nhận: `{task.assignee_id}`");
 
             return Ok(task);
         }
         catch (Exception ex)
         {
-            await _telegram.SendMessageAsync($"❌ Lỗi khi tạo task: {ex.Message}");
+            await _telegram.SendMessageAsync($" Lỗi khi tạo task: {ex.Message}");
             return StatusCode(500, new { message = "Tạo task thất bại", error = ex.Message });
         }
     }
@@ -98,21 +98,21 @@ public class TasksItemController : ControllerBase
         // Gửi log Telegram
         if (oldStatus != task.status)
         {
-            await _telegram.SendMessageAsync($"🔄 *{task.title}* đổi trạng thái: `{oldStatus}` → `{task.status}`");
+            await _telegram.SendMessageAsync($" *{task.title}* đổi trạng thái: `{oldStatus}` → `{task.status}`");
         }
         else if (oldProgress != task.progress_percentage)
         {
-            await _telegram.SendMessageAsync($"📈 *{task.title}* cập nhật tiến độ: `{oldProgress}%` → `{task.progress_percentage}%`");
+            await _telegram.SendMessageAsync($" *{task.title}* cập nhật tiến độ: `{oldProgress}%` → `{task.progress_percentage}%`");
         }
         else
         {
-            await _telegram.SendMessageAsync($"✏️ Task *{task.title}* vừa được cập nhật nội dung.");
+            await _telegram.SendMessageAsync($" Task *{task.title}* vừa được cập nhật nội dung.");
         }
 
         // Nếu Completed thì gửi thông báo đặc biệt
         if (task.status == "Completed")
         {
-            await _telegram.SendMessageAsync($"✅ Hoàn thành – Task *{task.title}* đã done và đồng bộ ClickUp!");
+            await _telegram.SendMessageAsync($" Hoàn thành – Task *{task.title}* đã done và đồng bộ ClickUp!");
         }
 
         return Ok(task);
@@ -165,7 +165,7 @@ public class TasksItemController : ControllerBase
             await _clickUp.DeleteTaskAsync(clickUpIdToDelete);
 
         // Gửi log Telegram
-        await _telegram.SendMessageAsync($"🗑️ Task *{title}* đã bị xóa.");
+        await _telegram.SendMessageAsync($" Task *{title}* đã bị xóa.");
 
         return Ok(new { message = "Xoá task thành công" });
     }
