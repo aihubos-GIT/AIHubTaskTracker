@@ -22,7 +22,7 @@ builder.Services.AddCors(options =>
               .AllowAnyMethod()
               .AllowAnyHeader());
 });
-
+builder.Services.AddSingleton<TelegramService>();
 // Controllers
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
@@ -102,14 +102,6 @@ builder.Services.AddSingleton(provider =>
         builder.Configuration["ClickUp:ListId"]
     )
 );
-
-
-builder.Services.AddSingleton(new TelegramService(
-    new HttpClient(),
-    builder.Configuration["Telegram:BotToken"],
-    builder.Configuration["Telegram:ChatId"]
-));
-
 var app = builder.Build();
 
 app.UseRouting();

@@ -1,28 +1,35 @@
-﻿using System.Net.Http;
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace AIHubTaskTracker.Services
 {
     public class TelegramService
     {
-        private readonly HttpClient _client;
-        private readonly string _botToken;
-        private readonly string _chatId;
+        private readonly IConfiguration _config;
+        private readonly HttpClient _http;
 
-        public TelegramService(HttpClient client, string botToken, string chatId)
+        public TelegramService(IConfiguration config)
         {
-            _client = client;
-            _botToken = botToken;
-            _chatId = chatId;
+            _config = config;
+            _http = new HttpClient();
         }
 
         public async Task SendMessageAsync(string message)
         {
-            var payload = new { chat_id = _chatId, text = message };
-            var content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
-            await _client.PostAsync($"https://api.telegram.org/bot{_botToken}/sendMessage", content);
+            var token = _config["Telegram:BotToken"];
+            var chatId = _config["Telegram:ChatId"];
+            if (string.IsNullOrEmpty(token) || string.IsNullOrEmpty(chatId))
+                return;
+
+            var payload = new
+            {
+                chat_id = chatId,
+                text = message,
+                parse_mode = "Markdown"
+            };
+
+            var json = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
+            await _http.PostAsync($"https://api.telegram.org/bot{token}/sendMessage", json);
         }
     }
 }
