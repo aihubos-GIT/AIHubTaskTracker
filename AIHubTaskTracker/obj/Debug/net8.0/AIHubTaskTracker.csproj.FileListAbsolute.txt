@@ -357,7 +357,6 @@ D:\BE AIHUB\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\staticwebassets\m
 D:\BE AIHUB\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AIHubTaskTracker.props
 D:\BE AIHUB\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AIHubTaskTracker.props
 D:\BE AIHUB\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\staticwebassets.pack.json
-D:\BE AIHUB\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\BE AIHUB\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\AIHubTas.0B3E5441.Up2Date
 D:\BE AIHUB\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\AIHubTaskTracker.dll
 D:\BE AIHUB\AIHubTaskTracker\AIHubTaskTracker\obj\Debug\net8.0\refint\AIHubTaskTracker.dll

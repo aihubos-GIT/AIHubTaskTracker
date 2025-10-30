@@ -18,6 +18,9 @@ namespace AIHubTaskTracker.Models
 
         [Required, EmailAddress, MaxLength(255)]
         public string email { get; set; } = null!; //  Email người dùng 
+        public string? avatar_url { get; set; }
+        public StatusType status { get; set; } = StatusType.Online; // mặc định online
+
 
         [Required]
         public string password_hash { get; set; } = null!; //  Lưu hash mật khẩu 
