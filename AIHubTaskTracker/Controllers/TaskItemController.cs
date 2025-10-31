@@ -38,20 +38,22 @@ public class TasksItemController : ControllerBase
 				status = statusValue,
 				progress_percentage = dto.progress_percentage,
 				notion_link = dto.notion_link,
+				clickup_id = dto.clickup_id,  // ← NHẬN CLICKUP_ID TỪ DASHBOARD (có thể là placeholder)
 				created_at = DateTime.UtcNow,
 				updated_at = DateTime.UtcNow
 			};
 
 			_db.Tasks.Add(task);
-			await _db.SaveChangesAsync(); // Lưu lần 1 để có ID
+			await _db.SaveChangesAsync();
 
-			var clickUpId = await _clickUp.CreateTaskAsync(task);
-			if (!string.IsNullOrEmpty(clickUpId))
-			{
-				task.clickup_id = clickUpId;
-				_db.Tasks.Update(task);
-				await _db.SaveChangesAsync(); // Lưu lần 2: có clickUp_id
-			}
+			// 🔥 BỎ ĐOẠN NÀY - KHÔNG TẠO CLICKUP TỪ BACKEND NỮA!
+			// var clickUpId = await _clickUp.CreateTaskAsync(task);
+			// if (!string.IsNullOrEmpty(clickUpId))
+			// {
+			//     task.clickup_id = clickUpId;
+			//     _db.Tasks.Update(task);
+			//     await _db.SaveChangesAsync();
+			// }
 
 			// Gửi log Telegram
 			await _telegram.SendMessageAsync($"✅ Task mới được tạo:\n*{task.title}*\nNgười giao: `{task.assigner_id}` → Người nhận: `{task.assignee_id}`");

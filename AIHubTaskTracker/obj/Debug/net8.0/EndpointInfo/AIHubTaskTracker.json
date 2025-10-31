@@ -550,6 +550,11 @@
           "notion_link": {
             "type": "string",
             "nullable": true
+          },
+          "clickup_id": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
           }
         },
         "additionalProperties": false
@@ -603,6 +608,10 @@
             "nullable": true
           },
           "notion_link": {
+            "type": "string",
+            "nullable": true
+          },
+          "clickup_id": {
             "type": "string",
             "nullable": true
           }
