@@ -189,6 +189,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TasksItemController",
+    "Method": "CleanupOldTasks",
+    "RelativePath": "api/v1/tasks/cleanup",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AuthController",
     "Method": "Profile",
     "RelativePath": "api/v1/users/profile",
