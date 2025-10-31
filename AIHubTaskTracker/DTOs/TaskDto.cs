@@ -28,7 +28,7 @@ namespace AIHubTaskTracker.DTOs
         public int progress_percentage { get; set; } = 0;
 
         public string? notion_link { get; set; }
-		public string clickup_id { get; internal set; }
+		public string? clickup_id { get;set; }
 	}
 
     public class TaskUpdateDto
