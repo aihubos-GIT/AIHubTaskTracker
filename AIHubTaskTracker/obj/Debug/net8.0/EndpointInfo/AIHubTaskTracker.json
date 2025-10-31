@@ -342,6 +342,18 @@
           }
         }
       }
+    },
+    "/api/v1/tasks/cleanup": {
+      "delete": {
+        "tags": [
+          "TasksItem"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
